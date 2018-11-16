@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Twitter</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+	<input type="text" name="input" id="input" onkeyup='countCharacter(this.value)'>
+	<button id='tweet' onclick='tweet()'>Tweet</button>
+
+	<div>
+		<span id='status'></span>
+	</div>
+
+	<div>
+		<ul id='output'>
+			
+		</ul>
+	</div>
+
+	<script type="text/javascript" src='script.js'></script>
+</body>
+</html>
