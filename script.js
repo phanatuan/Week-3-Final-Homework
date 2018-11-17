@@ -70,4 +70,5 @@ function generateTweetHTML(tweetContent,i) {
 function clearTweet() { 
 	document.getElementById('output').innerHTML = '';
 	feed = [];
+	document.getElementById('input').value = "";
 }
