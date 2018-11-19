@@ -46,8 +46,8 @@ function retweet(position) {
 	feed.splice(position,0,feed[position]);
 	feed[position+1].isLike = false;
 	//Retweet without re-render everything in the DOM
-	var ul = document.getElementById(`tweet-${position}`);
-	ul.insertAdjacentHTML('afterend',generateTweetHTML(feed[position].text,position));
+	var li = document.getElementById(`tweet-${position}`);
+	li.insertAdjacentHTML('afterend',generateTweetHTML(feed[position].text,position));
 }
 
 function toogleLikeUnlike(position) { 
