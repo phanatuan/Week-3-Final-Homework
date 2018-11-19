@@ -20,7 +20,7 @@
 	      			<div class="card" style="width: auto;">
 	
 					  <div class="card-body">
-					    <h5 class="card-title">Anh Tuan</h5>
+					    <h5 class="card-title">Phan Anh Tuan</h5>
 					    <a href='https://twitter.com/Timmy53273660'<h6>@soloism</h6></a>
 					    <p class="card-text my-3" >I'm a beginner Javascript Coder. This is my Twitter Clone. What do you think about it?.</p>
 					    <a href="#" class="btn btn-primary">Donate</a>
@@ -61,7 +61,23 @@
 					
 					<div>
 						<ul id='output' class='list-unstyled border-bottom bg-white'>
-							<!--Display the Tweets here -->
+							<!-- This is an example Tweet --> 
+							<li class="media my-4 py-4 px-4 bg-light text-dark">
+								<img class="mr-3" src="https://placehold.it/35x35" alt="Generic placeholder image">
+								<div class="media-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.</p>
+									<ul class = 'my-2 list-inline'>
+										<li class='list-inline-item px-1'><a href='#' onclick='retweet(${i})'>Retweet</a></li>
+										<li class='list-inline-item px-1'><a href='#' onclick='toogleLikeUnlike(${i})'>Like</a></li>
+										<li class='list-inline-item px-1'><a href='#' onclick='deleteTweet(${i})'>Delete Tweet</a></li>
+										<li class='list-inline-item px-1'><a href='#' onclick='editTweet(${i})'>Edit Tweet</a></li>
+									</ul>
+								</div>
+							</li>`
+							<!-- End of an example Tweet --> 
 						</ul>	
 						
 						
@@ -89,9 +105,11 @@
 	    	</div>
   </div>
 
+  	<!-- SCRIPT Declare --> 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src='script.js'></script>
+	<!-- End of SCRIPT Declare --> 
 </body>
 </html>
